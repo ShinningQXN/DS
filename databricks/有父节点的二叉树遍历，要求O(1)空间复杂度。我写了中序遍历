@@ -1,0 +1,17 @@
+有父节点的二叉树遍历，要求O(1)空间复杂度。我写了中序遍历
+
+
+def inOrderOOne(self, root):
+    leftMost = False
+    while root:  
+        if not leftMost: 
+            while root.left: root = root.left     
+        leftMost = True
+        print(root.key)
+        if root.right: 
+            leftMost, root = False, root.right 
+        elif root.parent:
+            # find the first parent that's not right child as all right children have been printed 
+            while root.parent and root == root.parent.right: root = root.parent  
+            root = root.parent 
+        else: break

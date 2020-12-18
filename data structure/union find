@@ -1,0 +1,35 @@
+union find
+1:1
+2:2
+3:3
+
+4:4
+5:4
+6:4
+
+[1000
+ 0001
+ 1111]
+(x,y)
+ []
+ edge(x, y)
+ unin(x,y)
+
+union(1,3)11,21
+union(2,3)23,33
+
+分布式union find
+用多台机器读入union pair
+father存在distributed cache里
+可以分布式并行，但是cache需要加锁：Corner case为
+union(1,3)11,21
+union(2,3)23,33
+find(1,3)find(2,3)union(1,3)union(2,3),最后1:1,2:2,3:2。1没有被union到。但是可以加锁
+
+或者如果是sparse matrix，可以用（x,y）来表示matrix
+
+
+Operating Systems: Know about processes, threads and concurrency issues. Know about locks and mutexes and semaphores and monitors and how they work. Know about deadlock and livelock and how to avoid them. Know what resources a processes needs, and a thread needs, and how context switching works, and how it's initiated by the operating system and underlying hardware. Know a little about scheduling. The world is rapidly moving towards multi-core, so know the fundamentals of "modern" concurrency constructs.
+
+what is deadlock:
+https://www.youtube.com/watch?v=B4IVu-2hCos

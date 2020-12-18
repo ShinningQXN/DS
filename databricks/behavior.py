@@ -1,0 +1,3 @@
+第一轮过了以后，会有第二轮Manager chat，很randomly selected的一个manager
+主要是问问过去的project，怎么处理conflict，为什么选Databricks，希望做什么之类的 
+卡夫卡的原理.

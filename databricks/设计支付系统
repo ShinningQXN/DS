@@ -1,0 +1,5 @@
+设计支付系统
+
+设计一个KV Store as cache with 2 random eviction policy
+类似LRU的设计, 不过eviction的时候是随机选择两个entry, 把老的删除.
+设计一个durable KV Store that can recover from failures (用WALs实现的)

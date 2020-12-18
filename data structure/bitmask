@@ -1,0 +1,13 @@
+bitmask
+
+flip i to 1
+visited | (1 << nei)
+
+check if i is visited
+(visited >> nei & 1)
+
+if all visited
+visited == (1 << N) - 1
+
+例子： solution2
+https://leetcode.com/problems/number-of-squareful-arrays/solution/

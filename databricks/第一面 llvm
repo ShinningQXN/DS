@@ -1,0 +1,3 @@
+第一面 llvm
+经典面经题, 用llvm IR里面的alloca, store, load, add, sub, icmp, br指令实现除法.
+做完刚好时间到, 没来得及问followup, 就问了个问题就结束了

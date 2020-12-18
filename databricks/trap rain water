@@ -1,0 +1,16 @@
+trap rain water
+
+class Solution:
+    def trap(self, height: List[int]) -> int:
+        left, right, lefthi, righthi = 0, len(height) - 1, height[0], height[-1] // 易错，如果input是[], 初始化为0，0则可以避免
+        rst = 0
+        while left <= right: // 容易出错，这里不能忘记=
+            if lefthi < righthi:
+                rst += max(lefthi - height[left], 0)
+                lefthi = max(lefthi, height[left])
+                left += 1
+            else:
+                rst += max(0, -height[right] + righthi)
+                righthi = max(righthi, height[right])
+                right -= 1 
+        return rst
