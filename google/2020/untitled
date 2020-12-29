@@ -1,0 +1,30 @@
+
+店面一体 上来直接做题
+google doc 分栏，页面宽度确定，分两栏。怎么分总行数最小。input: stringA, stringB, width, output: total row number
+
+｜abcdef | ghijklm |   
+or
+｜abc | ghijklm     |
+｜def |                 |
+
+follow up 如果string只能按单词分怎么办，言外之意只能split by ‘{white space}’ 还是求total row number。 会跟上一个结果有一点点差别
+
+https://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=696964&extra=page%3D1%26filter%3Dsortid%26sortid%3D311%26searchoption%5B3046%5D%5Bvalue%5D%3D1%26searchoption%5B3046%5D%5Btype%5D%3Dradio%26sortid%3D311%26orderby%3Ddateline
+
+diff of rows for A and B as small as possible
+
+|a b c|a| 6
+
+4-6
+5
+a b 
+
+
+x / a = l - x / b
+al-ax=bx
+x = al / (a+b)
+
+2,6 l = 3
+
+
+
