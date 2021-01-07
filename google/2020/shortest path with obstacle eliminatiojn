@@ -1,0 +1,28 @@
+shortest path with obstacle eliminatiojn
+
+思路：
+只需要在visited里面放入已经
+
+https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/
+corner case:
+可能走不到
+[[0,0],
+[1,0],
+[1,0],
+[1,0],
+[1,0],
+[1,0],
+[0,0],
+[0,1],
+[0,1],
+[0,1],
+[0,0],
+[1,0],
+[1,0],
+[0,0]]，4
+如果visited只记录i，j,但是可能用的elimination更少，
+
+
+
+
+

@@ -1,0 +1,8 @@
+maxsum of subsets of array
+
+第二题，给一个int array，select elements,使得sum最大。条件是，选择的数字之间abs gap不能等于1.比如 [1,2,2,3,3]，最后的选择[1,3,3], return 7.不能选2是因为它和1或者3的abs diff是1。
+
+其司令
+可以用dp，时空为nlgn, 1
+
+https://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=697976&extra=page%3D1%26filter%3Dsortid%26sortid%3D311%26searchoption%5B3046%5D%5Bvalue%5D%3D1%26searchoption%5B3046%5D%5Btype%5D%3Dradio%26sortid%3D311%26orderby%3Ddateline

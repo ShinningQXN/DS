@@ -1,0 +1,22 @@
+Island
+第一题，给一个0.1的matrix，类似于number of island，有点不一样的是，island定义是如果0water被1land包围住，他也属于island。最后求max size of island。
+
+assumption:
+- valid input: not empty, no other except 0, 1
+- can fit in mem in one machine
+- area definition: digit count
+
+class Island():
+	def find_max_island_area(self, island: List[List[int]]) -> int:
+		m, n = len(island), len(island[0])
+		for col in range(0, n):
+
+
+	def dfs(self, island, i, j):
+		if i, j valid and island[i][j] == 0:
+			island[i][j] = 2
+			dfs()
+
+	def count
+
+	def valid(i, j):
