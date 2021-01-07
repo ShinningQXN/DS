@@ -11,3 +11,9 @@ visited == (1 << N) - 1
 
 例子： solution2
 https://leetcode.com/problems/number-of-squareful-arrays/solution/
+
+
+
+1^1=0
+0^1 = 1
+
